@@ -23,7 +23,7 @@ function verificarIntento() {
     //console.log(intentos);
     
     if (numeroDeUsuario === numeroSecreto) {
-        asignarTextoElemento ('p',`Acertaste el numero en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'}`);
+        asignarTextoElemento ('p',`Acertaste el numero despues de ${intentos} ${(intentos === 1) ? 'vez' : 'veces'}`);
         document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
         //El usuario no acerto
